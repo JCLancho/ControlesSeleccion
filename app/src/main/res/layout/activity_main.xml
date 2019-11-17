@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/actividad1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:text="Actividad 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="actividad1"/>
+
+    <Button
+        android:id="@+id/actividad2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Actividad 2"
+        app:layout_constraintStart_toStartOf="@+id/actividad1"
+        app:layout_constraintTop_toBottomOf="@+id/actividad1"
+        android:onClick="actividad2"/>
+
+    <Button
+        android:id="@+id/actividad3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Actividad 3"
+        app:layout_constraintStart_toStartOf="@+id/actividad2"
+        app:layout_constraintTop_toBottomOf="@+id/actividad2"
+        android:onClick="actividad3"/>
+
+    <Button
+        android:id="@+id/salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Salir"
+        app:layout_constraintStart_toStartOf="@+id/actividad3"
+        app:layout_constraintTop_toBottomOf="@+id/actividad3"
+        android:onClick="salir"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
